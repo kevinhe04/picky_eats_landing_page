@@ -9,13 +9,10 @@ const handleSubmit = () => {
   const formData = new FormData();
   formData.append("email", email);
 
-  fetch(
-    "https://script.google.com/macros/s/AKfycbz-K_O8FdJX2yYK-FAUzIdNB3l0Bs78A7XZGqfo-PTSZZ_CPglRal_Z3xuP_YXzDeLwXQ/exec",
-    {
-      method: "POST",
-      body: formData,
-    }
-  )
+  fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
+    method: "POST",
+    body: formData,
+  })
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
