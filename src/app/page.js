@@ -54,7 +54,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-row justify-center">
           <h2 className="text-2xl mb-6 font-patuaOne">
-            PickyEats is almost here...
+            PickyEats Mobile is almost here...
           </h2>
           <p className="mt-2 animate-bounce">🫐</p>
         </div>
@@ -74,12 +74,24 @@ export default function Home() {
             type="submit"
             className="w-full bg-pink-400 font-patuaOne hover:bg-white transition-all hover:text-black text-white py-3 rounded-lg font-bold duration-200"
           >
-            Join the Waitlist
+            Join the Waitlist for PickyEats Mobile !
           </button>
         </form>
 
         <p className="mt-4 text-gray-400 font-patuaOne">
-          Be the first to know when PickyEats launches!
+          Be the first to know when PickyEats launches on IOS and Google Play!
+        </p>
+        <p className="mt-4 text-gray-400 font-patuaOne">
+          In the meantime, go checkout the web version of PickyEats!
+          <br></br>
+          👉
+          <a
+            href="http://www.pickyeats.tech"
+            target="_blank"
+            className="text-white underline"
+          >
+            PickyEats.
+          </a>
         </p>
       </div>
     </div>
