@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
           <a
-            href="https://apps.apple.com/"
+            href="https://apps.apple.com/us/app/pickyeats/id6737159291"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform hover:scale-105"
