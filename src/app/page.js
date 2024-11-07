@@ -57,19 +57,6 @@ export default function Home() {
             </div>
           </a>
         </div>
-        <p className="mt-10 text-gray-400 font-patuaOne">
-          In the meantime, go checkout the web version of PickyEats!
-          <br />
-          👉
-          <a
-            href="http://www.pickyeats.tech"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white underline mt-10"
-          >
-            PickyEats.
-          </a>
-        </p>
       </div>
     </div>
   );
