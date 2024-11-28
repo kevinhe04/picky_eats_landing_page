@@ -13,10 +13,10 @@ export default function Home() {
 
       <div className="text-white max-w-md md:max-w-lg absolute">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 font-patuaOne z-10 mt-20">
-          Are you ready ?
+          Are you ready?
         </h1>
         <div className="flex flex-row justify-center">
-          <h2 className="text-2xl mb-6 font-patuaOne">It's time to eat.</h2>
+          <h2 className="text-2xl mb-6 font-patuaOne">Let's eat.</h2>
           <p className="mt-2 animate-bounce">🫐</p>
         </div>
 
