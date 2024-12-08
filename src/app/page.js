@@ -11,15 +11,14 @@ export default function Home() {
         />
       </div>
 
-      <div className="text-white max-w-md md:max-w-lg absolute">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 font-patuaOne z-10 mt-20">
-          Are you ready?
+      <div className="text-white max-w-md md:max-w-lg absolute flex flex-col">
+        <h1 className="mb-6 font-patuaOne z-10 mt-20">
+          <div className="text-4xl md:text-6xl font-bold text-center">
+            Discover Your <br />
+            Next Meal.
+          </div>
         </h1>
-        <div className="flex flex-row justify-center">
-          <h2 className="text-2xl mb-6 font-patuaOne">Let's eat.</h2>
-          <p className="mt-2 animate-bounce">🫐</p>
-        </div>
-
+        <p className="mt-5 animate-bounce text-2xl">🍽️😋🍽️</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full mt-10">
           <a
             href="https://apps.apple.com/us/app/pickyeats/id6737159291"
