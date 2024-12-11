@@ -1,6 +1,9 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="bg-black min-h-screen flex flex-col items-center justify-center text-center">
       <div className="absolute top-0 left-50% z-0">
@@ -16,9 +19,9 @@ export default function Home() {
           <div className="text-4xl md:text-6xl font-bold text-center">
             Discover Your <br />
             Next Meal.
+            <p className="mt-10 animate-bounce text-2xl">🍽️😋🍽️</p>
           </div>
         </h1>
-        <p className="mt-5 animate-bounce text-2xl">🍽️😋🍽️</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full mt-10">
           <a
             href="https://apps.apple.com/us/app/pickyeats/id6737159291"
@@ -54,6 +57,14 @@ export default function Home() {
             </div>
           </a>
         </div>
+        <a
+          onClick={() => {
+            router.push("./privacy-policy");
+          }}
+          className="cursor-pointer mt-5 underline"
+        >
+          Privacy Policy
+        </a>
       </div>
     </div>
   );
