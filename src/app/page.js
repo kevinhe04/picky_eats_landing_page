@@ -8,8 +8,8 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className="relative bg-black min-h-screen flex flex-col">
-      <header className="absolute top-0 left-0 right-0 flex justify-between items-center p-6 z-0">
+    <div className="relative bg-black min-h-screen flex flex-col overflow-hidden">
+      <header className="absolute top-[-50px] left-[-20px] right-0 flex justify-between items-center p-6 z-0">
         <img
           src="./PickyEats.png"
           alt="PickyEats Logo"
