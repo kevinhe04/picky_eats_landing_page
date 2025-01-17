@@ -1,28 +1,36 @@
 "use client";
-
+import React from "react";
 import { useRouter } from "next/navigation";
+import { Coffee, Shield } from "lucide-react";
+import { SocialIcon } from "react-social-icons";
 
 export default function Home() {
   const router = useRouter();
+
   return (
-    <div className="bg-black min-h-screen flex flex-col items-center justify-center text-center">
-      <div className="absolute top-0 left-50% z-0">
+    <div className="relative bg-black min-h-screen flex flex-col overflow-hidden">
+      <header className="absolute top-[-50px] left-[-20px] right-0 flex justify-between items-center p-6 z-0">
         <img
           src="./PickyEats.png"
           alt="PickyEats Logo"
-          className="w-64 h-64 object-contain"
+          className="w-48 h-48 object-contain"
         />
-      </div>
+      </header>
 
-      <div className="text-white max-w-md md:max-w-lg absolute flex flex-col">
-        <h1 className="mb-6 font-patuaOne z-10 mt-20">
-          <div className="text-4xl md:text-6xl font-bold text-center">
-            Discover Your <br />
+      <main className="flex-grow flex flex-col items-center justify-center px-6 text-center z-10">
+        <h1 className="text-white font-bold text-5xl md:text-7xl mb-6 tracking-tight leading-tight">
+          Discover Your <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
             Next Meal.
-            <p className="mt-10 animate-bounce text-2xl">🍽️😋🍽️</p>
-          </div>
+          </span>
         </h1>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full mt-10">
+
+        <p className="text-gray-300 text-xl mb-12 max-w-2xl mx-auto">
+          Elevate your dining experience with personalized recommendations that
+          match your unique taste and mood. 🍽️
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full mb-8">
           <a
             href="https://apps.apple.com/us/app/pickyeats/id6737159291"
             target="_blank"
@@ -57,15 +65,49 @@ export default function Home() {
             </div>
           </a>
         </div>
-        <a
-          onClick={() => {
-            router.push("./privacy-policy");
-          }}
-          className="cursor-pointer mt-5 underline"
-        >
-          Privacy Policy
-        </a>
-      </div>
+      </main>
+
+      <footer className="absolute bottom-0 left-0 right-0 p-6 z-20">
+        <div className="flex flex-row justify-between items-center">
+          <div className="flex items-center space-x-4">
+            <a
+              href="https://www.buymeacoffee.com/pickyeats"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-white hover:text-yellow-400 transition-colors"
+            >
+              <Coffee size={24} className="mr-2" />
+              <span className="text-sm">Support Us</span>
+            </a>
+            <button
+              onClick={() => router.push("./privacy-policy")}
+              className="flex items-center text-gray-400 hover:text-white transition-colors"
+            >
+              <Shield size={20} className="mr-2" />
+              <span className="text-sm underline underline-offset-4">
+                Privacy Policy
+              </span>
+            </button>
+          </div>
+
+          <div className="flex items-center space-x-4">
+            <SocialIcon
+              url="https://www.tiktok.com/@kvin.he"
+              network="tiktok"
+              bgColor="transparent"
+              fgColor="white"
+              style={{ height: 35, width: 35 }}
+            />
+            <SocialIcon
+              url="https://www.instagram.com/picky._eats/"
+              network="instagram"
+              bgColor="transparent"
+              fgColor="white"
+              style={{ height: 35, width: 35 }}
+            />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
