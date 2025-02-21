@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Patua_One } from "@next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const patua = Patua_One({ subsets: ["latin"], weight: "400" });
 
@@ -28,6 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>{metadata.title as string}</title>
+        <meta name="description" content={metadata.description as string} />
+      </Head>
       <body
         className={`${patua.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
