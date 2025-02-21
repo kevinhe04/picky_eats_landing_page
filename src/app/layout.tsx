@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Patua_One } from "@next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const patua = Patua_One({ subsets: ["latin"], weight: "400" });
 
@@ -19,7 +18,6 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Picky Eats.",
-  description: "Picky Eats? We got you covered.",
 };
 
 export default function RootLayout({
@@ -29,10 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>{metadata.title as string}</title>
-        <meta name="description" content={metadata.description as string} />
-      </Head>
       <body
         className={`${patua.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
