@@ -17,7 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "PickyEats.",
+  title: "Picky Eats.",
+  description: "Picky Eats? We got you covered.",
 };
 
 export default function RootLayout({
