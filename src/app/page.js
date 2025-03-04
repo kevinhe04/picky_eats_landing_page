@@ -26,8 +26,7 @@ export default function Home() {
         </h1>
 
         <p className="text-gray-300 text-xl mb-12 max-w-2xl mx-auto">
-          Elevate your dining experience with personalized recommendations that
-          match your unique taste and mood. 🍽️
+          Elevate your dining experience with Picky Eats 🍽️
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full mb-8">
