@@ -18,7 +18,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Picky Eats",
-  description: "The Perfect App for Picky Eaters.",
+  description:
+    "Picky Eats recommends the best restaurants near you, tailored to your taste and mood. Try it now!",
 };
 
 export default function RootLayout({
